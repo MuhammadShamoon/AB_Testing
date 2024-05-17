@@ -1,4 +1,4 @@
-# AB_Testing
+# AB_Testing with SQL
 
 
 ### Project Overview
@@ -10,7 +10,7 @@ We are running an experiment at an item level, which means all users who visit w
 
 ### Tools
 - 
-- [ABBA](https://thumbtack.github.io/abba/demo/abba.html) is used to compute the lifts in metrics and the p-values for the binary metrics ( 30 day order binary and 30 day view binary) using a interval 95% confidence. 
+- [ABBA](https://thumbtack.github.io/abba/demo/abba.html) is a statistical tool, which is used to compute the lifts in metrics and the p-values for the binary metrics (30-day order binary and 30-day view binary) using an interval 95% confidence. 
 
 ### Data Analysis
 
