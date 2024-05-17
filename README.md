@@ -7,7 +7,9 @@ We are running an experiment at an item level, which means all users who visit w
 
 ### Data Sources
 The following datasets are meant to mimic an online eCommerce site, publically available at the [Mode Analytics](https://mode.com/).
-
+- final_assignments.csv
+- events.csv
+- orders.csv
 
 ### Tools
 - [Mode Analytics](https://mode.com/) is used to do SQL for this project.
