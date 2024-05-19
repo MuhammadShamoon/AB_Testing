@@ -118,4 +118,4 @@ From the analysis of the success rates, confidence intervals, and the p-value, t
 - The improvement is 2.6%, which is positive but relatively small.
 - The p-value of 0.20 indicates that the observed improvement is not statistically significant.
 
-Therefore, the recommendation is to disapprove the variation.
+Therefore, the recommendation is to **disapprove the variation**.
