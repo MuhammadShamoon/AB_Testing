@@ -2,7 +2,7 @@
 
 
 ### Project Overview
-We are running an experiment at an item level, which means all users who visit will see the same page. However, the layout of different item pages may differ. We will calculate the order binary, view binary and average views and orders for the 30-day window after the test assignment for item_test_2.
+We are running an experiment at an item level, which means all users who visit will see the same page. However, the layout of different item pages may differ. We will calculate the order binary, view binary, average views and orders for the 30-day window after the test assignment for item_test_2.
 
 
 ### Data Sources
@@ -82,14 +82,40 @@ GROUP BY test_assignment
 
 ### Results
 
-- The above SQL code gives the following analysis:
+The above SQL code gives the following analysis:
   
 ![image](https://github.com/MuhammadShamoon/AB_Testing/assets/52103515/e2e9cd1c-6699-4406-b480-83c5ba07d3f4)
 
 
-- testing results 
+
+
 
 ### Recommendations
 
+#### For Orders:
 
-### Limitations
+Using the above metrics, [ABBA](https://thumbtack.github.io/abba/demo/abba.html) (a statistical tool) gave the following results.
+
+![image](https://github.com/MuhammadShamoon/AB_Testing/assets/52103515/72cba738-7681-4af3-a32b-41e2ee2fbe4b)
+
+Based on the analysis of the success rates, the confidence intervals, and the p-value, it is clear that:
+
+- There is no statistically significant difference between the control group and orders treatment (p-value of 0.88).
+- The success rates are essentially the same, and the small negative improvement suggests no benefit from using the treatment version.
+- The confidence intervals for both the control group and order treatment overlap, indicating no meaningful difference in performance.
+
+The recommendation is to disapprove the variation. It does not provide any improvement over the control group, and the high p-value strongly suggests that any observed differences are due to chance rather than a real effect. Therefore, it is better to stick with the baseline or explore other variations that might lead to a significant improvement.
+
+#### For Views: 
+
+The following results are obtained using metrics from the analysis of views treatment.  
+
+![image](https://github.com/MuhammadShamoon/AB_Testing/assets/52103515/08b7a6bd-4206-4b21-b6f8-71bd2b6c8d82)
+
+From the analysis of the success rates, confidence intervals, and the p-value, the following points are clear:
+
+- Views treatment has a slightly higher success rate (83%) compared to the control group (81%).
+- The improvement is 2.6%, which is positive but relatively small.
+- The p-value of 0.20 indicates that the observed improvement is not statistically significant.
+
+Therefore, the recommendation is to disapprove the variation.
